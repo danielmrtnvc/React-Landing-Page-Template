@@ -19,7 +19,6 @@ export const Features = (props) => {
                     <img src={d.img} alt="" />{" "}
                   </div>
 
-                  <i className={d.icon}></i>
                   <h3>{d.title}</h3>
                   <p>{d.text}</p>
 

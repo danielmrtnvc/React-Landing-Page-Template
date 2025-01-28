@@ -72,7 +72,6 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
   transition: all 0.8s;
 }
 #menu.navbar-default {
@@ -104,7 +103,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #ffffff 0%, #9d2332 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +124,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: linear-gradient(to right, #ffffff 0%, #9d2332 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -152,7 +151,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  /*underline gradient background: linear-gradient(to right, #ffffff 0%, #6372ff 100%);*/
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -167,7 +166,7 @@ hr {
   text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  /*background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);*/
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -184,7 +183,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #9d2332;
 }
 .btn:active,
 .btn.active {
@@ -278,96 +277,103 @@ header .intro-text {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
-/* About Section */
-#about {
-  padding: 100px 0;
+
+/* Ingredients Section */
+
+.ingredients-image {
+  margin-top: -90px;
 }
-#about h3 {
-  font-size: 22px;
-  margin: 0 0 20px;
+.ingredients-image,
+.ingredients-image img {
+  display: flex;
+  max-width: 400px;
+  max-height: 550px;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
-#about h2 {
-  position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+
+#ingredients {
+  background: #ffffff;
+  margin-top: 120px;
+  
 }
-#about h2::after {
+
+
+/* Banner Section */
+
+#banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative; 
+}
+
+.overlay {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+}
+
+.banner-qoute {
   position: absolute;
-  content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  height: 4px;
-  width: 60px;
-  bottom: 0;
-  left: 0;
-}
-#about .about-text li {
-  margin-bottom: 6px;
-  margin-left: 6px;
-  list-style: none;
-  padding: 0;
-}
-#about .about-text li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  color: #5ca9fb;
-  font-size: 11px;
-  font-weight: 300;
-  padding-right: 8px;
-}
-#about img {
-  width: 520px;
-  margin-top: 10px;
-  background: #fff;
-  border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
-}
-#about p {
-  line-height: 24px;
-  margin: 30px 0;
-}
-/* Services Section */
-#services {
-  padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  color: #fff;
-}
-#services .service-desc {
-  margin: 10px 10px 20px;
-}
-#services h2 {
-  color: #fff;
-}
-#services .section-title h2::after {
-  position: absolute;
-  content: "";
-  background: rgba(255, 255, 255, 0.3);
-  height: 4px;
-  width: 60px;
-  bottom: 0;
-  margin-left: -30px;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
-#services i.fa {
-  font-size: 42px;
-  width: 120px;
-  height: 120px;
-  padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  border-radius: 50%;
-  color: #fff;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-}
-#services h3 {
-  font-weight: 500;
-  padding: 5px 0;
+
+#banner h2 {
   color: #fff;
 }
-#services p {
-  color: rgba(255, 255, 255, 0.75);
+
+#banner img {
+  height: 100%;
+  width: 100%;
 }
-#services .service-desc {
-  margin-bottom: 40px;
+
+/* Mission Section */
+
+.mission-image {
+  margin-top: -90px;
 }
+.mission-image,
+.mission-image img {
+  display: flex;
+  max-width: 400px;
+  max-height: 550px;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+#mission {
+  background: #ffffff;
+  margin-top: 120px;
+  
+}
+
+/* Nature Section */
+
+.nature-image {
+  margin-top: -90px;
+}
+.nature-image,
+.nature-image img {
+  display: flex;
+  max-width: 400px;
+  max-height: 550px;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+#nature {
+  background: #ffffff;
+  margin-top: 120px;
+  
+}
+
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
@@ -475,6 +481,57 @@ header .intro-text {
   padding: 10px 0 0;
   color: #888;
 }
+
+/* About Section */
+#about {
+  padding: 100px 0;
+}
+#about h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+#about h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#about h2::after {
+  position: absolute;
+  content: "";
+  /*background: linear-gradient(to right, #ffffff 0%, #ffffff 100%);*/
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 0;
+}
+#about .about-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+}
+#about .about-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+#about img {
+  width: 520px;
+  margin-top: 10px;
+  background: #fff;
+  border-right: 0;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+#about p {
+  line-height: 24px;
+  margin: 30px 0;
+}
+
+
+
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;

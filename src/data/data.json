@@ -65,7 +65,7 @@
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
-  "Services": [
+  "Banner": [
     {
       "icon": "fa fa-wordpress",
       "name": "Lorem ipsum dolor",
@@ -181,15 +181,27 @@
       "text": "Rich and vibrant, perfect with every sip."
     }
   ],
-
   "Ingredients": [
     {
-      "img": "img/Ingredients-left.jpg",
+      "img": "img/ingredients-left.jpg",
       "title": "Freshly Pressed Fruit"
     },
     {
-      "img": "img/Ingredients-right.jpg",
+      "img": "img/ingredients-right.jpg",
       "title": "Canadian Spring Water"
+    }
+  ],
+  "Mission": [
+    {
+      "img": "img/mission-left.jpg"
+    },
+    {
+      "img": "img/mission-right.png"
+    }
+  ],
+  "Nature": [
+    {
+      "img": "img/nature-image.png"
     }
   ]
 
