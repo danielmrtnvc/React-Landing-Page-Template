@@ -204,11 +204,13 @@ a:focus,
   outline-offset: none;
 }
 /* Header Section */
+
 .intro {
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
+  /*background: url(../img/intro-bg.jpg) center center no-repeat;*/
+  /*background: url(../img/blush-intro-vid.mp4) center center no-repeat;*/
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -245,17 +247,31 @@ header .intro-text {
   text-align: center;
 }
 /* Features Section */
+
+.features-image {
+  float: left;
+  margin-top: -90px;
+}
+.features-image,
+.features-image img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+
 #features {
-  background: #f6f6f6;
+  background: #ffffff;
+  margin-top: 80px;
 }
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
   transition: all 0.5s;
-  color: #fff;
+  color: #f7f7f7;
   width: 100px;
   height: 100px;
-  padding: 30px 0;
+  padding: 50px 0;
   border-radius: 50%;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
