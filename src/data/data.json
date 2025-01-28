@@ -180,5 +180,17 @@
       "title": "BLUEBERRY BURST",
       "text": "Rich and vibrant, perfect with every sip."
     }
+  ],
+
+  "Ingredients": [
+    {
+      "img": "img/Ingredients-left.jpg",
+      "title": "Freshly Pressed Fruit"
+    },
+    {
+      "img": "img/Ingredients-right.jpg",
+      "title": "Canadian Spring Water"
+    }
   ]
+
 }
