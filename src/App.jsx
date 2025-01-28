@@ -7,7 +7,8 @@ import { About } from "./components/about";
 import { Banner } from "./components/banner";
 import { Mission } from "./components/mission";
 import { Nature } from "./components/nature";
-import { Contact } from "./components/contact";
+import { Footer } from "./components/footer";
+
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -36,7 +37,8 @@ const App = () => {
       <Nature data={landingPageData.Nature}/>
 
       <About data={landingPageData.About} />
-      <Contact data={landingPageData.Contact} />
+      <Footer data={landingPageData.Footer} />
+
     </div>
   );
 };

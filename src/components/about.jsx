@@ -50,7 +50,6 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             {" "}
             <img src="img/contact-image.jpg" className="img-responsive" alt="" />{" "}
-
           </div>
 
           <div className="col-xs-12 col-md-6">
