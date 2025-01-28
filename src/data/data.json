@@ -161,22 +161,22 @@
   },
   "Features": [
     {
-      "img": "img/Cherry.jpg",
+      "img": "img/Cherry.png",
       "title": "CHERRY BLAST",
       "text": "Bold and tangy for a vibrant energy boost."
     },
     {
-      "img": "img/Peach.jpg",
+      "img": "img/Peach.png",
       "title": "PEACH MAGIC",
       "text": "Smooth and mellow with a luscious finish."
     },
     {
-      "img": "img/Apple.jpg",
+      "img": "img/Apple.png",
       "title": "APPLE MIST",
       "text": "Crisp and refreshing, perfect for every moment."
     },
     {
-      "img": "img/Blueberry.jpg",
+      "img": "img/Blueberry.png",
       "title": "BLUEBERRY BURST",
       "text": "Rich and vibrant, perfect with every sip."
     }
