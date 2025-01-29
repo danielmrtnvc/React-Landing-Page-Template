@@ -41,9 +41,8 @@ export const Contact = (props) => {
 
   return (
     <div id="contact" className="text-center">
-      <div className="container">
+      <div className="">
         <div className="row">
-
 
           <div className="col-xs-12 col-md-6">
             {" "}
@@ -117,7 +116,7 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
+                <button type="submit" className="contact-btn">
                   Submit
                 </button>
               </form>

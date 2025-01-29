@@ -7,7 +7,17 @@ html {
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
+
 }
+
+@font-face {
+  font-family: 'Chillen';
+  src: url('../fonts/font-awesome/fonts/Chillen.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 h2,
 h3,
 h4 {
@@ -76,6 +86,7 @@ hr {
  width: 100%;
  height: 180%;
  justify-self: center;
+
 }
 
 
@@ -83,21 +94,21 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
+  
   background-color: #fff;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 300;
   color: #333;
- 
+  font-family: 'Chillen', sans-serif;
+
 }
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Lato", sans-serif;
   color: #555;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   padding: 8px 2px;
   border-radius: 0;
@@ -521,11 +532,24 @@ header .intro-text {
 
 
 /* Contact Section */
+
+
 #contact {
-  padding: 100px 0 60px;
   background: linear-gradient(to right, #F1CFCF 0%, #F1CFCF 100%);
   color: rgba(255, 255, 255, 0.75);
 }
+
+#contact img {
+  height: 830px;
+  width: 100%;
+}
+
+.sentMessage {
+  align-self: center;
+  width: 100%;
+}
+
+
 #contact .section-title {
   margin-bottom: 40px;
 }
@@ -533,10 +557,9 @@ header .intro-text {
   font-size: 16px;
 }
 #contact h2 {
-  color: #fff;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  color: #1E1E1E;
+  margin-top: 90px;
+  font-weight: 200;
 }
 #contact .section-title h2::after {
   position: absolute;
@@ -548,14 +571,19 @@ header .intro-text {
   left: 30px;
 }
 #contact h3 {
-  color: #fff;
-  margin-top: 80px;
-  margin-bottom: 25px;
-  padding-bottom: 20px;
-  font-weight: 400;
+  color: #1E1E1E;
+  font-weight: 100;
 }
 #contact form {
-  padding-top: 20px;
+  margin-top: 80px;
+  padding: 20px;
+  text-align: left;
+  color: #1E1E1E;
+  font-weight: 600;
+  background-color: #ffffff;
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 50px;
 }
 #contact .text-danger {
   color: #cc0033;
@@ -563,8 +591,7 @@ header .intro-text {
 }
 #contact .btn-custom {
   margin: 30px 0;
-  background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #000000;
 }
 #contact .btn-custom:hover {
   color: #1f386e;
@@ -647,8 +674,22 @@ label {
   background: #fff;
 }
 
+.contact-btn {
+
+  width: 100%;
+  background-color: #2C2C2C;
+  color: #F5F5F5;
+  padding: 5px;
+  margin-bottom: 40px;
+}
 
 /* Footer Section*/
+
+
+#footer a {
+  color: inherit;
+}
+
 #footer {
   padding: 10px 0 60px;
   background: linear-gradient(to right, #000000 0%, #000000 100%);
