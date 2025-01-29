@@ -58,7 +58,7 @@ export const Footer = (props) => {
                   </li>
                   <li>
                     <a href="https://www.facebook.com/profile.php?id=61572410199484" target="_blank" >
-                      <i className="fa fa-facebook"></i>
+                      <i className="fa fa-facebook"></i> 
                     </a>
                   </li>
                 </ul>
