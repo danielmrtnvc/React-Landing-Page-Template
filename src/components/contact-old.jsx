@@ -7,9 +7,7 @@ const initialState = {
   email: "",
   message: "",
 };
-
-export const About = (props) => {
-
+export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
@@ -17,6 +15,7 @@ export const About = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
+  
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,32 +35,23 @@ export const About = (props) => {
         }
       );
   };
-
-
   return (
-    <div id="about" className="text-center">
-      <div className="container">
-        <div className="row">
-
-          <div className="col-md-12 col-lg-12 section-title">
-            <h2>Let's Collaborate</h2>
-          </div>
-
-          <div className="col-xs-12 col-md-6">
-            {" "}
-            <img src="img/contact-image.jpg" className="img-responsive" alt="" />{" "}
-          </div>
-
-          <div className="col-xs-12 col-md-6">
-            <div className="about-text">
-              <h2>Contact Us</h2>
-              <h3>If you are a wholesaler or a retail store, let's connect.</h3>
-            
+    <div>
+      <div id="contact">
+        <div className="container">
+          <div className="col-md-8">
+            <div className="row">
+              <div className="section-title">
+                <h2>Get In Touch</h2>
+                <p>
+                  Please fill out the form below to send us an email and we will
+                  get back to you as soon as possible.
+                </p>
+              </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
                 <div className="row">
-                  <div className="col-md-12">
+                  <div className="col-md-6">
                     <div className="form-group">
-                      <p>Name</p>
                       <input
                         type="text"
                         id="name"
@@ -74,24 +64,8 @@ export const About = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                  <div className="col-md-12">
+                  <div className="col-md-6">
                     <div className="form-group">
-                    <p>Email</p>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Email"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div className="col-md-12">
-                    <div className="form-group">
-                    <p>Subject</p>
                       <input
                         type="email"
                         id="email"
@@ -106,7 +80,6 @@ export const About = (props) => {
                   </div>
                 </div>
                 <div className="form-group">
-                <p>Message</p>
                   <textarea
                     name="message"
                     id="message"
@@ -120,14 +93,71 @@ export const About = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Submit
+                  Send Message
                 </button>
               </form>
-
-
-
             </div>
           </div>
+          <div className="col-md-3 col-md-offset-1 contact-info">
+            <div className="contact-item">
+              <h3>Contact Info</h3>
+              <p>
+                <span>
+                  <i className="fa fa-map-marker"></i> Address
+                </span>
+                {props.data ? props.data.address : "loading"}
+              </p>
+            </div>
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-phone"></i> Phone
+                </span>{" "}
+                {props.data ? props.data.phone : "loading"}
+              </p>
+            </div>
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-envelope-o"></i> Email
+                </span>{" "}
+                {props.data ? props.data.email : "loading"}
+              </p>
+            </div>
+          </div>
+          <div className="col-md-12">
+            <div className="row">
+              <div className="social">
+                <ul>
+                  <li>
+                    <a href={props.data ? props.data.facebook : "/"}>
+                      <i className="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.twitter : "/"}>
+                      <i className="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.youtube : "/"}>
+                      <i className="fa fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div className="container text-center">
+          <p>
+            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
+            <a href="http://www.templatewire.com" rel="nofollow">
+              TemplateWire
+            </a>
+          </p>
         </div>
       </div>
     </div>
