@@ -13,6 +13,7 @@ import { Footer } from "./components/footer";
 
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import { Analytics } from "@vercel/analytics/react"
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -46,7 +47,7 @@ const App = () => {
 
 
       <Footer data={landingPageData.Footer} />
-
+      <Analytics />
     </div>
   );
 };
